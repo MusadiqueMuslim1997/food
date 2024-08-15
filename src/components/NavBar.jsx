@@ -13,7 +13,8 @@ const NavBar = () => {
 <div className="logo2">For the food your crave</div>
 </header>
 <nav>
-  
+  <input type="checkbox" id='check' />
+  <label htmlFor="check"><div className="icon"><FontAwesomeIcon icon={faBars} /></div></label>
   <ul>
     <li>Home</li>
     <li>About</li>
@@ -26,7 +27,7 @@ const NavBar = () => {
     <li>Membership</li>
 
   </ul>
-  <div className="icon"><FontAwesomeIcon icon={faBars} /></div>
+  
 </nav>
 </>  
   )

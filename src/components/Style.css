@@ -43,7 +43,7 @@ nav{
    
     padding: 20px 80px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     margin-top: 100px;
     position: fixed;
@@ -72,9 +72,11 @@ nav > ul > li{
     font-size: 1.5rem;
     color: gray;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
-
+#check{
+    display: none;
+}
 @media (max-width:1250px){
     .container{
         width: 1250px;
@@ -83,7 +85,10 @@ nav > ul > li{
 
 @media (max-width:1000px){
     header{
-        padding: 40px
+        padding: 40px;
+    }
+    nav{
+        padding: 20px 40px;
     }
     .logo1,.logo2{
         font-size: 1rem;
@@ -93,6 +98,15 @@ nav > ul > li{
     }
     nav > ul{
         flex-direction: column;
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+    #check:checked~ul{
+        display: flex;
+        margin-top: 20px;
+       
     }
 }
 @media (max-width:630px){
@@ -106,8 +120,6 @@ nav > ul > li{
     .logo > img{
         width: 100px;
     }
-    .icon{
-        display: flex;
-    }
+    
    
 }
