@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
-import NavBar from './components/NavBar'
+// src/App.js
+import React from 'react';
+import NavBar from './components/NavBar';
+import RecipeList from './pages/RecipeList';
+import RecipeCards from './pages/RecipeCards';
 
 function App() {
-  
-
   return (
     <>
-    <NavBar/>
+      <NavBar />
+      <RecipeCards/>
+      {/* <RecipeList /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
