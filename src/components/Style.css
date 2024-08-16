@@ -114,6 +114,9 @@ nav > ul > li{
         padding: 20px;
         gap: 10px;
     }
+    nav{
+        padding: 10px 20px;
+    }
     .logo1,.logo2{
         font-size: 0.8rem;
     }
