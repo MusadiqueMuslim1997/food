@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import RecipeCard from './RecipeCard'; // Ensure the path is correct
-import './RecipeList.css'; // Ensure CSS file exists
+import './Card.css'; // Ensure CSS file exists
+import RecipeCards from './RecipeCards';
 
 const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
@@ -38,9 +38,9 @@ const RecipeList = () => {
   if (recipes.length === 0) return <p>No recipes found.</p>;
 
   return (
-    <div className="recipe-list">
+    <div className="card-sec">
       {recipes.map(recipe => (
-        <RecipeCard key={recipe.id} recipe={recipe} />
+        <RecipeCards key={recipe.id} recipe={recipe} />
       ))}
     </div>
   );

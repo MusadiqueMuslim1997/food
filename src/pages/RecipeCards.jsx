@@ -1,116 +1,21 @@
-import React from 'react'
-import './Card.css'
-import img1 from '../images/car.jfif'
-const RecipeCards = () => {
+import React from 'react';
+import './Card.css';
+
+const RecipeCards = ({ recipe }) => {
   return (
-    <section className='hero'>
+    <div className="card">
+      <div className="card-img">
+        <img 
+          src={recipe.imageUrl || 'https://via.placeholder.com/150'} 
+          alt={recipe.name} 
+          className="recipe-card-img" 
+        />
+      </div>
+      <div className="card-head">{recipe.name}</div>
+      <div className="card-des">{recipe.description || 'No description available.'}</div>
+      <div className="card-post">Prep Time: {recipe.prepTimeMinutes} minutes</div>
+    </div>
+  );
+};
 
-     <div className="card-sec">
-     
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-
-
-     <div className="card">
-      <div className="card-img"><img src={img1} alt="" /></div>
-      <div className="card-head">Chicken</div>
-      <div className="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt nisi mollitia</div>
-      <div className="card-post">Post 8min ago</div>  
-     </div>
-
-    
-     </div>
-
-    </section>
-    
-  )
-}
-
-export default RecipeCards
+export default RecipeCards;
