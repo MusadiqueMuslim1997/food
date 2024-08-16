@@ -1,4 +1,4 @@
-/* General Reset and Typography */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +6,23 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Hero Section */
 
 
-/* Card Container */
+
+
 .card-sec {
-    width: 100%; /* Allow container to use full width */
+    width: 100%; 
     display: flex;
     flex-wrap: wrap;
     margin-top: 180px;
     gap: 20px;
     justify-content: center;
-    padding: 20px 80px; /* Center the cards within the container */
+    padding: 20px 80px; 
 }
 
-/* Card Styling */
+
 .card {
-    width: 250px; /* Fixed width for each card */
+    width: 250px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,14 +30,14 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
     transition: box-shadow 0.2s;
-    margin-top: 20px; /* Margin top to create space above each card */
+    margin-top: 20px; 
 }
 
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* Card Image */
+
 .card-img {
     width: 100%;
     height: 160px;
@@ -53,7 +53,6 @@
     object-fit: cover;
 }
 
-/* Card Header */
 .card-head {
     width: 100%;
     height: 50px;
@@ -65,10 +64,10 @@
     padding: 10px;
 }
 
-/* Card Description */
+
 .card-des {
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -77,10 +76,10 @@
     border-top: 1px solid #cecece;
 }
 
-/* Card Preparation Time */
+
 .card-post {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -89,32 +88,32 @@
     border-top: 1px solid #cecece;
 }
 
-/* Media Queries */
+
 
 
 
 
 @media (max-width: 950px) {
     .card {
-        width: 300px; /* Adjust card width for medium screens */
+        width: 300px; 
     }
 }
 
 @media (max-width: 776px) {
     .card-sec {
         justify-content: center;
-        padding: 20px; /* Ensure centering is maintained for smaller screens */
+        padding: 20px; 
     }
     .card {
-        width: 280px; /* Adjust card width for smaller screens */
+        width: 280px; 
     }
 }
 
 @media (max-width: 380px) {
     .hero {
-        padding: 40px 20px; /* Adjust padding for very small screens */
+        padding: 40px 20px; 
     }
     .card {
-        width: 80%; /* Adjust card width for mobile screens to fill container */
+        width: 80%; 
     }
 }
